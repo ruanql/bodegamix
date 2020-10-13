@@ -1,0 +1,1654 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+header,
+section {
+  overflow-x: hidden;
+}
+
+:root {
+  --Lato: "Lato", sans-serif;
+  --roge-red: #cb3638;
+  --light-red: #ec6c63;
+  --dark-red: #8f1b21;
+  --roge-blue: #0c3374;
+  --dark-blue: #061a3b;
+  --light-black: #242424;
+  --bggradient: linear-gradient(to bottom, #fe053f, #d31c30);
+  --gradientblue: linear-gradient(to right, #345f96, #35aeff);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+body {
+  font-family: "Lato", sans-serif !important;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.main-header {
+  background: url("../img/bg-header.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 100px;
+  background-color: #b1b1b1;
+  background-blend-mode: darken;
+}
+
+.bg-chega-mais {
+  background: url("../img/chega-mais/bg-chega-mais.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.bg-marcas{
+  background: url("../img/futuro-roge.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.bg-mudar-sempre{
+  background: url("../img/mudar-o-mundo/bg-mudar-sempre.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.bg-ser-parceiro{
+  background: url("../img/vem-ser-roge/bg-parceiro.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.menu {
+  background-color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 0px;
+}
+
+.menu ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main-header .menu ul a {
+  text-decoration: none;
+  color: #2e3545;
+  transition: 0.4s all;
+  padding-right: 10px;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.main-header .menu ul button a {
+  color: #fff;
+}
+
+.main-header .menu ul button a:hover {
+  color: #fff;
+}
+
+.main-header .menu ul a:hover {
+  color: #cb3638;
+}
+
+.main-header .menu .active {
+  color: #cb3638;
+}
+
+.main-header .menu ul a:hover img{
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  .main-header {
+    background: url("../img/bg-header.jpg") no-repeat center;
+    background-size: cover;
+    background-color: #b1b1b1;
+    background-blend-mode: darken;
+    height: 100vh;
+    padding-top: 20vmin;
+  }
+
+  .bg-chega-mais {
+    background: url("../img/chega-mais/bg-chega-mais.jpg") no-repeat center left;
+    background-size: cover;
+    background-color: #b1b1b1;
+    background-blend-mode: darken;
+    height: 100vh;
+    padding-top: 20vmin;
+  }
+
+  .bg-marcas{
+    background: url("../img/futuro-roge.jpg") no-repeat center;
+    background-size: cover;
+    background-color: #b1b1b1;
+    background-blend-mode: darken;
+    height: 100vh;
+    padding-top: 20vmin;
+  }
+
+  .bg-mudar-sempre{
+    background: url("../img/mudar-o-mundo/bg-mudar-sempre.jpg") no-repeat center left;
+    background-size: cover;
+    background-color: #b1b1b1;
+    background-blend-mode: darken;
+    height: 100vh;
+    padding-top: 20vmin;
+  }
+
+  .bg-ser-parceiro{
+    background: url("../img/vem-ser-roge/bg-parceiro.jpg") no-repeat center;
+    background-size: cover;
+    background-color: #b1b1b1;
+    background-blend-mode: darken;
+    height: 100vh;
+    padding-top: 20vmin;
+  }
+
+  .main-header video {
+    display: none;
+  }
+
+  .header-home .header-text {
+    text-align: center !important;
+  }
+
+  .header-home .header-text p {
+    width: 100% !important;
+  }
+}
+
+.header-home .header-text {
+  text-align: left;
+  margin-top: 20vh;
+}
+
+.header-home .header-text h1 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.header-home .header-text h2 {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.header-home .header-text p {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 80%;
+}
+
+.btn-red {
+  background: var(--bggradient);
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 6px 25px;
+  border-radius: 50px;
+  transition: 0.2s all;
+}
+
+.btn-red i {
+  margin-left: 12px;
+}
+
+.btn-red:hover {
+  background: var(--roge-blue);
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.02rem;
+  -webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.17);
+}
+
+
+.btn-red a {
+  color: #fff;
+}
+
+.btn-red a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-blue {
+  background: var(--roge-blue);
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 6px 25px;
+  border-radius: 50px;
+  transition: 0.2s all;
+}
+
+.btn-blue i {
+  margin-left: 12px;
+}
+
+.btn-blue:hover {
+  background: var(--gradientblue);
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.02rem;
+  -webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.17);
+}
+
+
+.btn-blue a {
+  color: #fff;
+}
+
+.btn-blue a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-red-viva {
+  background: var(--bggradient);
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 6px 25px;
+  border-radius: 50px;
+  transition: 0.3s ease all;
+}
+
+.btn-red-viva i {
+  margin-left: 12px;
+}
+
+.btn-red-viva:hover {
+  background: #fff;
+  color: var(--roge-red);
+  cursor: pointer;
+  letter-spacing: 0.02rem;
+  -webkit-box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.57);
+}
+
+.btn-red-viva a {
+  color: #fff;
+}
+
+.btn-red-viva:hover a {
+  color: var(--roge-red);
+  text-decoration: none;
+}
+
+.chega-mais {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.2s all;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #fff;
+}
+
+.chega-mais i {
+  padding-left: 12px;
+  transition: 0.2s all;
+}
+
+.chega-mais:hover {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  letter-spacing: 0.03em;
+}
+
+.chega-mais:hover i {
+  padding-left: 16px;
+}
+
+.title-hashtag {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.title-content {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.text-content {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Section-1 sobre */
+
+.sobre {
+  padding-top: 100px;
+  background: var(--bggradient);
+  height: auto;
+  overflow-y: hidden;
+}
+
+ .revolucao {
+  top: 70px;
+  position: relative;
+  z-index: 2;
+  overflow-y: hidden;
+}
+
+.revolucao img {
+  width: 100%;
+}
+
+.sobre .row .col-md-6 .cartao-about {
+  margin-top: 70px;
+  color: #fff;
+  padding: 0vmin 10vmin 5vmin 10vmin;
+  z-index: 1;
+}
+
+.sobre .row .col-md-6 .cartao-about h2 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.sobre .row .col-md-6 .cartao-about h3 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.sobre .row .col-md-6 .cartao-about p {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.varejo {
+  background-color: #414141;
+  background-image: url("../img/futuro-roge.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  position: relative;
+  width: 100%;
+  height: 532px;
+}
+
+.varejo .row .text-white {
+  padding: 15vmin 40vmin 5vmin 0vmin;
+}
+
+.varejo .row .text-white h2 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.varejo .row .text-white h3 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.varejo .row .text-white p {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+
+    .revolucao {
+      top: 50px;
+      position: relative;
+      z-index: 2;
+      overflow-y: hidden;
+    }
+
+    .varejo {
+      padding: 10vmin;
+      height: auto;
+    }
+
+  .sobre .row .col-md-6 .cartao-about {
+    text-align: center !important;
+  }
+
+  .marcas .row .text-white {
+    padding: 10vmin 1vmin 0 1vmin !important;
+    text-align: center !important;
+  }
+
+  .slick-slide img {
+    display: initial!important;
+  }
+
+  .varejo .row .text-white {
+    padding: 15vmin 5vmin 0vmin 5vmin;
+    text-align: center;
+  }
+}
+
+
+/* Section-2 marcas */
+
+.marcas {
+  background-image: url("../img/marcas.jpg");
+  background-size: cover;
+  background-position: auto;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  padding: 10vmin 0;
+
+}
+
+.marcas .row .text-white {
+  padding: 0vmin 0vmin 5vmin 0vmin;
+}
+
+.marcas .row .logomarcas {
+  padding: 0vmin 25vmin ;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-white h2 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.text-white h3 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.text-white p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.marcas .logomarcas img {
+  border-radius: 8px;
+  transition: all ease 0.4s;
+  margin: 1em;
+}
+
+.marcas .logomarcas img:hover {
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+.slick-dots {
+  bottom: initial!important;
+}
+
+@media (max-width: 768px) {
+  .marcas {
+    height: auto;
+    padding: 10vmin 0;
+  }
+}
+
+/* Section - 3 comprar */
+
+.buy {
+  padding: 10vmin 0vmin;
+}
+
+.text-beneficios {
+  font-size: 20px;
+  font-weight: 500;
+  align-items: center;
+  color: #2e3545;
+  padding-bottom: 5vmin;
+}
+
+.text-blue {
+  color: #00377b;
+}
+
+.text-blue h2 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.text-blue h3 {
+  color: #0099ff;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.buy .how-to {
+  text-align: left;
+  align-self: center;
+}
+
+.buy .text-cards {
+  padding: 8em 1em 0 1em;
+}
+
+.buy .text-cards h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+.buy .text-cards p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4rem;
+  text-transform: uppercase;
+}
+
+.buy .card-online {
+  background: url('../img/card-online.png') no-repeat;
+  background-position: center;
+  height: 310px;
+  transition: all ease 0.2s;
+}
+
+.buy .card-online a {
+  text-decoration: none;
+}
+
+.buy .card-online:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.buy .card-raiz {
+  background: url('../img/card-raiz.png') no-repeat;
+  background-position: center;
+  height: 310px;
+  transition: all ease 0.2s;
+}
+
+.buy .card-raiz a{
+  text-decoration: none;
+}
+
+.buy .card-raiz:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.buy .card-inbox {
+  background: url('../img/card-inbox.png') no-repeat;
+  background-position: center;
+  height: 310px;
+  transition: all ease 0.2s;
+}
+
+.buy .card-inbox a {
+  text-decoration: none;
+}
+
+.buy .card-inbox:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.buy .text-legal h2 {
+  color: var(--light-black);
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 2rem;
+  text-transform: uppercase;
+  text-align: right;
+  padding-top: 5vmin;
+}
+
+
+@media (max-width: 768px) {
+
+  .buy .text-blue {
+    text-align: center;
+  }
+  .buy .text-legal h2 {
+    text-align: center;
+  }
+
+  .buy .text-cards {
+    padding: 8em 5em 0 5em;
+  }
+  
+
+}
+
+/* Section - 4 depoimentos */
+
+@media (max-width: 768px) {
+
+  .depo .row {
+    margin: initial!important;
+  }
+
+  .depo .col-depo  {
+    padding: 2em!important;
+  }
+
+
+  .depo .col-depo h1 {
+    text-align: center;
+  }
+
+  .depo .col-depo p {
+    text-align: center;
+    padding: initial;
+  }
+
+  .depo .img-depoimentos img{
+    display: none;
+  }
+
+  .depo .col-depo .col-md-12 {
+    padding: initial!important;
+    text-align: center;
+  }
+
+  .depo .card-body {
+    padding: 1.25em!important;
+  }
+
+  .img-rounded  {
+    position: relative;
+    top: 20px!important;
+    right: 0px!important;
+    text-align: center;
+    z-index: 1;
+  }
+  
+}
+
+.depo {
+  background: var(--bggradient);
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.depo .img-depoimentos {
+  top: 49px;
+}
+
+.depo .img-depoimentos img {
+  width: 100%;
+}
+
+.img-rounded  {
+  position: relative;
+  top: 70px;
+  right: 64px;
+  z-index: 1;
+}
+
+.img-rounded img {
+  border-radius: 10em;
+}
+
+.depo .col-depo {
+  padding: 5em;
+}
+
+.depo .col-depo .col-md-12 {
+  padding: 0em 4em;
+}
+
+.col-depo h1 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+.col-depo p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+  padding-right: 5em;
+}
+
+.depo .card-body {
+  padding: 1.25em 1.25em 1.25em 3.25em;
+}
+
+.depo .card-title {
+  margin-bottom: 0rem;
+}
+
+.depo .card {
+  background: #eeeeee;
+  border-radius: 1rem;
+}
+
+.depo .card h1 {
+  color: #00377b;
+  text-transform: none;
+}
+
+.depo .card .text-muted {
+  color: #0099ff!important;
+  font-size: 1.2em;
+}
+
+.depo .card p {
+  color: #2e3545;
+  padding-right: initial;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1400px) {
+
+.depo .img-depoimentos {
+  top: 185px;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .sobre {
+    padding-top: 10px;
+  }
+
+  .sobre .row .col-md-6 .cartao-about {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
+
+  .comprar .row .col-md-6 .cartao-buy {
+    position: initial;
+    width: initial;
+    height: initial;
+    text-align: center !important;
+  }
+
+  .social .row .brand {
+    text-align: center !important;
+  }
+
+  .social .row .siga {
+    text-align: center !important;
+  }
+
+  footer {
+    text-align: center;
+    padding-top: 35px!important;
+  }
+
+  .footer .input-group {
+    padding: 0 3rem 2rem 3rem !important;
+  }
+}
+
+/* ----------- CHEGA MAIS ------------- */
+
+/* Section-1 historia */
+
+.historia {
+  padding: 100px 0;
+  background: var(--bggradient);
+  height: auto;
+}
+
+
+/* Section-2 inovação */
+
+.inovacao {
+  background-color: #414141;
+  background-image: url("../img/chega-mais/bg-inovacao.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 650px;
+  position: relative;
+}
+
+.inovacao .row .text-white {
+  padding: 15vmin 0vmin 5vmin 0vmin;
+}
+
+.text-white {
+  color: #fff;
+  padding: 10vmin 0;
+}
+
+.text-white h2 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.text-white h3 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.text-white p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.inovacao p:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.icon-heart {
+  transition: 0.6s ease;
+}
+
+.icon-heart:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 768px) {
+  .inovacao {
+    text-align: center;
+  }
+
+  .inovacao .row {
+    padding: inherit;
+  }
+  
+}
+
+/* Section-3 futuro */
+
+.futuro {
+  padding: 100px 0;
+  background-image: url("../img/chega-mais/bg-chega-mais-futuro.jpg");
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+.futuro .text-content {
+  padding: 0 10em 0 10em;
+}
+
+@media only screen and (max-width: 768px) {
+  .futuro .text-content {
+    padding: initial;
+  }
+}
+
+/* Section-4 propósito */
+
+.proposito {
+  padding: 100px 0;
+  background-image: url("../img/chega-mais/bg-proposito.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: auto;
+}
+
+.proposito .text-content {
+  padding: 0 8em 0 5em;
+  margin-top: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .proposito .title-content {
+    text-align: center;
+    padding: initial;
+  }
+
+  .proposito .text-content {
+    text-align: center;
+    padding: initial;
+    margin-top: 2em;
+  }
+}
+
+/* Section-5 valores */
+
+.valores {
+  background: var(--bggradient);
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.valores .img-valor {
+  top: 115px;
+  left: -130px;
+}
+
+.valores .img-valor img {
+  width: 65vw;
+}
+
+.valores .col-valor {
+  padding: 5em;
+}
+
+.depo .col-valor .col-md-12 {
+  padding: 0em 4em;
+}
+
+.col-valor h1 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+.col-valor p {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+  padding-right: 5em;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+  .valores .img-valor {
+    display: none;
+  }
+  
+  .valores .col-valor {
+    padding: initial;
+    text-align: center!important;
+  }
+
+  .valores .col-valor h1,
+  .valores .col-valor p {
+    padding: initial;
+    text-align: center!important;
+  }
+
+}
+/* Section-6 numeros */
+
+.numeros {
+  background-color: #414141;
+  background-image: url("../img/chega-mais/bg-numeros.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.numeros .row .align-items-end {
+  padding: 0 8em 0 8em;
+}
+
+.numeros .icon-numbers {
+  max-height: 85px;
+  transition: 0.4s ease;
+}
+
+.numeros .icon-numbers:hover {
+  transform: scale(1.2);
+}
+
+.numeros .icon-dados .title-content {
+  line-height: normal;
+}
+
+.numeros .icon-dados .text-content {
+  line-height: normal;
+}
+
+
+/* Section-6 ser roge */
+
+.ser-roge {
+  padding: 100px 0;
+  background: #fff;
+  height: auto;
+  text-align: center;
+}
+
+.ser-roge .btn-red {
+  text-decoration: none;
+}
+
+
+/* --------------------- */
+
+/* ---------- Marcas ----------- */
+
+.numeros .icon-one { 
+  border-right: 1px solid #fff;
+}
+
+.numeros .icon-two { 
+  border-right: 1px solid #fff;
+}
+
+.numeros .icon-three { 
+  border-right: 1px solid #fff;
+}
+
+@media (max-width: 768px) {
+  .numeros .title-content { 
+    border-right: none;
+  }
+}
+
+.bg-red {
+  background: var(--bggradient);
+}
+
+/* --------------------- */
+
+/* ---------- Mudar o mundo ----------- */
+
+/* Section-1 conhecimento */
+
+.conhecimento {
+  padding: 100px 0;
+  height: auto;
+  text-align: center;
+}
+
+/* Section-2 Como fazemos */
+
+.como-fazemos {
+  padding: 100px 0;
+  background-image: url("../img/mudar-o-mundo/bg-como-fazemos.jpg");
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  text-align: center;
+}
+
+.como-fazemos .text-content {
+  padding: 0 10em 0 10em;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .como-fazemos .text-content {
+    padding: initial;
+  }
+
+}
+
+/* Section-2 reconhece depoimentos */
+
+.reconhece {
+  padding: 100px 0;
+  background-image: url("../img/mudar-o-mundo/bg-depoimentos.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: auto;
+}
+
+.reconhece .img-rounded  {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  margin-top: 1em;
+  margin-right: 2em;
+  z-index: 1;
+}
+
+.reconhece .img-rounded img {
+  border-radius: 10em;
+}
+
+.reconhece .card-body {
+  padding: 1.25em 1.25em 1.25em 3.25em;
+}
+
+.reconhece .card-title {
+  margin-bottom: 0rem;
+}
+
+.reconhece .card {
+  background: #eeeeee00;
+  border-radius: 1rem;
+}
+
+.reconhece .card h1 {
+  color: #000;
+  text-transform: none;
+}
+
+.reconhece .card .text-muted {
+  color: #333!important;
+  font-size: 1.2em;
+}
+
+.reconhece .card p {
+  color: #2e3545;
+  padding-right: initial;
+  font-size: 16px;
+}
+
+.reconhece .slick-dots li.slick-active button:before {
+  color: #cecece;
+  background-color: #cecece;
+}
+
+/* Section-4 exatas e humanas */
+
+.bg-exatas {
+    background-color: #414141;
+    background-image: url("../img/bg-fundacao.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+/* Section-4 quem acredita */
+
+.quem-acredita {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+}
+
+.quem-acredita .row .text-center {
+  padding: 150px 0 100px 0;
+}
+
+/* Section-4 ajudar */
+
+.ajudar {
+  background: var(--gradientblue);
+  width: 100%;
+  height: auto;
+}
+
+.ajudar .btn-red {
+  text-decoration: none;
+}
+
+
+/* --------------------- */
+
+/* ---------- Vem ser Roge ----------- */
+
+/* Section-2 benefícios site */
+
+.beneficios-site {
+  background-color: #414141;
+  background-image: url("../img/vem-ser-roge/banner-beneficios.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center right;
+  background-blend-mode: overlay;
+  height: auto;
+  position: relative;
+}
+
+.beneficios-site img {
+  transition: 0.6s ease all;
+}
+
+.beneficios-site img:hover {
+  transform: scale(1.05);
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+  .beneficios-site img {
+    width: 100%;
+  }
+
+}
+
+/* Section-3 onde estamos */
+
+.onde-estamos {
+  overflow: hidden;
+}
+
+.onde-estamos .mapa img {
+  width: 100%;
+  transition: 0.4s ease;
+}
+
+.onde-estamos .mapa img:hover {
+  transform: scale(1.02);
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .onde-estamos {
+    text-align: center;
+  }
+
+}
+
+/* --------------------- */
+
+/* Section fundacao */
+
+.fundacao {
+  background-color: #414141;
+  background-image: url("../img/fundacao.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 650px;
+  position: relative;
+}
+
+.fundacao .row .text-white {
+  padding: 15vmin 0vmin 5vmin 0vmin;
+}
+
+.text-white {
+  color: #fff;
+  padding: 10vmin 0;
+}
+
+.text-white h2 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.text-white h3 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.text-white p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+/* Section trabalhe */
+
+.trabalhe {
+  background-color: #acacac;
+  background-image: url("../img/trabalhe-roge.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+
+.trabalhe .row .text-blue {
+  padding: 15vmin 10vmin 10vmin 10vmin;
+}
+
+.trabalhe .text-blue {
+  color: #00377b;
+}
+
+.trabalhe .text-blue h2 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.trabalhe .text-blue h3 {
+  color: #0099ff;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+.trabalhe .text-blue p {
+  color: var(--light-black);
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.trabalhe .text-blue a {
+  color: var(--light-black);
+  border-color: var(--light-black);
+}
+
+@media only screen and (max-width: 768px) {
+  .fundacao {
+    height: auto;
+  }
+
+  .fundacao .row .text-white {
+    padding: 5vmin 5vmin;
+    text-align: center;
+  }
+
+  .trabalhe {
+    background-position: right;
+  }
+
+  .trabalhe .row .text-blue {
+    text-align: center;
+  }
+  
+}
+
+/* Social */
+
+.social {
+  background-color: var(--light-black);
+  color: #fff;
+  align-items: center;
+  text-decoration: none;
+  overflow-y: hidden;
+}
+
+.social .row .brand {
+  text-align: left;
+}
+
+.social .row .siga {
+  text-align: left;
+  align-self: center;
+}
+
+.botoes {
+  margin-bottom: 0px;
+}
+
+.botoes button {
+  background: transparent;
+  border-right: 1px solid #0c0c0c;
+  padding: 20px 25px;
+  text-decoration: none;
+}
+
+.botoes button:hover {
+  background: #0c0c0c;
+  border-right: 1px solid #0c0c0c;
+  cursor: pointer;
+}
+
+.botoes li:first-child {
+  border-left: 1px solid #0c0c0c;
+  margin-left: 8px;
+}
+
+.list-inline-item:not(:last-child) {
+  margin-right: 0px !important;
+}
+
+.social i {
+  align-items: center;
+  padding-right: 6px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding-top: 100px;
+}
+
+footer hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.17)!important;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #a7a7a7;
+  text-decoration: none;
+}
+
+.footer input {
+  background: transparent;
+  border: 1px solid #a7a7a7;
+}
+
+.footer input::placeholder {
+  background: transparent;
+  color: #fff;
+}
+
+.footer input:placeholder-shown {
+  background: transparent;
+  color: #fff;
+}
+
+.btn-cadastrar {
+  background: #000000;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid #a7a7a7;
+  border-radius: 2px;
+}
+
+.btn-cadastrar:hover {
+  background: #a7a7a7;
+}
+
