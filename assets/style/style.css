@@ -150,10 +150,10 @@ section {
   --roge-red: #cb3638;
   --light-red: #ec6c63;
   --dark-red: #8f1b21;
-  --roge-blue: #0c3374;
+  --roge-blue: #310165;
   --dark-blue: #061a3b;
   --light-black: #242424;
-  --bggradient: linear-gradient(to bottom, #fe053f, #d31c30);
+  --bggradient: linear-gradient(180deg, rgba(140,197,63,1) 0%, rgba(64,169,65,1) 100%);
   --gradientblue: linear-gradient(to right, #345f96, #35aeff);
   --light-gray: rgba(255, 255, 255, 0.877);
 }
@@ -165,12 +165,17 @@ body {
 }
 
 .main-header {
-  background: url("../img/bg-header.jpg") no-repeat center;
+  background: url("../img/bg-conceito.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
   padding-top: 100px;
   background-color: #b1b1b1;
   background-blend-mode: darken;
+  
+}
+
+.main-header .container .row{
+  overflow-y: hidden;
 }
 
 .bg-chega-mais {
@@ -192,7 +197,7 @@ body {
 }
 
 .bg-ser-parceiro{
-  background: url("../img/vem-ser-roge/bg-parceiro.jpg") no-repeat center;
+  background: url("../img/vem-ser-cliente/bg-parceiro.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
 }
@@ -250,7 +255,7 @@ body {
 
 @media (max-width: 768px) {
   .main-header {
-    background: url("../img/bg-header.jpg") no-repeat center;
+    background: url("../img/bg-conceito.jpg") no-repeat center;
     background-size: cover;
     background-color: #b1b1b1;
     background-blend-mode: darken;
@@ -286,7 +291,7 @@ body {
   }
 
   .bg-ser-parceiro{
-    background: url("../img/vem-ser-roge/bg-parceiro.jpg") no-repeat center;
+    background: url("../img/vem-ser-cliente/bg-parceiro.jpg") no-repeat center;
     background-size: cover;
     background-color: #b1b1b1;
     background-blend-mode: darken;
@@ -337,7 +342,7 @@ body {
   width: 80%;
 }
 
-.btn-red {
+.btn-green {
   background: var(--bggradient);
   font-weight: 700;
   color: #fff;
@@ -347,11 +352,11 @@ body {
   transition: 0.2s all;
 }
 
-.btn-red i {
+.btn-green i {
   margin-left: 12px;
 }
 
-.btn-red:hover {
+.btn-green:hover {
   background: var(--roge-blue);
   color: #fff;
   cursor: pointer;
@@ -361,17 +366,17 @@ body {
 }
 
 
-.btn-red a {
+.btn-green a {
   color: #fff;
 }
 
-.btn-red a:hover {
+.btn-green a:hover {
   color: #fff;
   text-decoration: none;
 }
 
 .btn-blue {
-  background: var(--roge-blue);
+  background: linear-gradient(180deg, rgba(140,197,63,1) 0%, rgba(64,169,65,1) 100%);
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
@@ -385,7 +390,7 @@ body {
 }
 
 .btn-blue:hover {
-  background: var(--gradientblue);
+  background: linear-gradient(180deg, rgba(140,197,63,1) 0%, rgba(64,169,65,1) 100%);
   color: #fff;
   cursor: pointer;
   letter-spacing: 0.02rem;
@@ -403,8 +408,8 @@ body {
   text-decoration: none;
 }
 
-.btn-red-viva {
-  background: var(--bggradient);
+.btn-green-viva {
+  background: linear-gradient(180deg, rgba(140,197,63,1) 0%, rgba(64,169,65,1) 100%);
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
@@ -413,24 +418,24 @@ body {
   transition: 0.3s ease all;
 }
 
-.btn-red-viva i {
+.btn-green-viva i {
   margin-left: 12px;
 }
 
-.btn-red-viva:hover {
+.btn-green-viva:hover {
   background: #fff;
-  color: var(--roge-red);
+  color: linear-gradient(180deg, rgba(140,197,63,1) 0%, rgba(64,169,65,1) 100%);
   cursor: pointer;
   letter-spacing: 0.02rem;
   -webkit-box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.57);
   box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.57);
 }
 
-.btn-red-viva a {
+.btn-green-viva a {
   color: #fff;
 }
 
-.btn-red-viva:hover a {
+.btn-green-viva:hover a {
   color: var(--roge-red);
   text-decoration: none;
 }
@@ -484,16 +489,39 @@ body {
   text-decoration: none;
 }
 
+.header-home .row {
+  padding: 5em 0;
+}
+
+.b-19 {
+ top: 70px;
+ overflow-y: hidden;
+}
+
+.b-19 img {
+  width: 100%;
+}
+
 /* Section-1 sobre */
 
 .sobre {
   padding-top: 100px;
-  background: var(--bggradient);
+  background: url('../img/bg-tecnologia.jpg');
   height: auto;
   overflow-y: hidden;
+  
+}
+.sobre .col-md-6 .col-12{
+  z-index: 1;
+  
 }
 
  .revolucao {
+   background: url('../img/orange-detail.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position-x: -5px;
+   overflow: hidden;
   top: 70px;
   position: relative;
   z-index: 2;
@@ -501,7 +529,8 @@ body {
 }
 
 .revolucao img {
-  width: 100%;
+  width: 70%;
+  margin-left: 150px;
 }
 
 .sobre .row .col-md-6 .cartao-about {
@@ -533,7 +562,7 @@ body {
 
 .varejo {
   background-color: #414141;
-  background-image: url("../img/futuro-roge.jpg");
+  background-image: url("../img/bg-praticidade.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -577,6 +606,11 @@ body {
       overflow-y: hidden;
     }
 
+    .revolucao img {
+      width: 70%;
+      margin-left: 100px;
+  }
+
     .varejo {
       padding: 10vmin;
       height: auto;
@@ -605,11 +639,11 @@ body {
 /* Section-2 marcas */
 
 .marcas {
-  background-image: url("../img/marcas.jpg");
+  background-image: url("../img/bg-marcas.jpg");
   background-size: cover;
   background-position: auto;
   width: 100%;
-  height: 90vh;
+  height: auto;
   position: relative;
   padding: 10vmin 0;
 
@@ -620,15 +654,15 @@ body {
 }
 
 .marcas .row .logomarcas {
-  padding: 0vmin 25vmin ;
+  padding: 0vmin 15vmin ;
 }
 
-.text-white {
+ .text-white {
   color: #fff;
 }
 
 .text-white h2 {
-  font-size: 24px;
+  font-size: 42px;
   font-weight: 900;
   line-height: 3rem;
   text-transform: uppercase;
@@ -652,6 +686,8 @@ body {
   border-radius: 8px;
   transition: all ease 0.4s;
   margin: 1em;
+  max-width: 100px;
+  max-height: 60px;
 }
 
 .marcas .logomarcas img:hover {
@@ -992,19 +1028,24 @@ body {
 /* Section-2 inovação */
 
 .inovacao {
-  background-color: #414141;
-  background-image: url("../img/chega-mais/bg-inovacao.jpg");
+  background-image: url("../img/bg-mix.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  background-blend-mode: overlay;
   width: 100%;
-  height: 650px;
+  height: auto;
   position: relative;
+  text-align: center;
+  padding:  10vmin 0vmin;
 }
 
-.inovacao .row .text-white {
-  padding: 15vmin 0vmin 5vmin 0vmin;
+
+.inovacao .row .col-mix {
+  padding-left: 15em;
+}
+
+.inovacao .row .col-mix-2 {
+  padding-right: 15em;
 }
 
 .text-white {
@@ -1033,19 +1074,6 @@ body {
   text-decoration: none;
 }
 
-.inovacao p:last-child {
-  display: flex;
-  align-items: center;
-}
-
-.icon-heart {
-  transition: 0.6s ease;
-}
-
-.icon-heart:hover {
-  transform: scale(1.2);
-}
-
 @media only screen and (max-width: 768px) {
   .inovacao {
     text-align: center;
@@ -1054,6 +1082,14 @@ body {
   .inovacao .row {
     padding: inherit;
   }
+
+  .inovacao .row .col-mix {
+    padding: initial;
+  }
+  
+  .inovacao .row .col-mix-2 {
+    padding: initial;
+  }
   
 }
 
@@ -1061,15 +1097,16 @@ body {
 
 .futuro {
   padding: 100px 0;
-  background-image: url("../img/chega-mais/bg-chega-mais-futuro.jpg");
+  background-image: url("../img/bg-onde.jpg");
   background-size: cover;
   background-position: center;
   height: auto;
 }
 
-.futuro .text-content {
-  padding: 0 10em 0 10em;
+.onde {
+  padding: 5em 15em 0 25em;
 }
+
 
 @media only screen and (max-width: 768px) {
   .futuro .text-content {
@@ -1110,8 +1147,10 @@ body {
 /* Section-5 valores */
 
 .valores {
-  background: var(--bggradient);
-  width: 100%;
+  background: url('../img/bg-valores.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: auto;
   position: relative;
   overflow: hidden;
@@ -1127,7 +1166,7 @@ body {
 }
 
 .valores .col-valor {
-  padding: 5em;
+  padding: 4em;
 }
 
 .depo .col-valor .col-md-12 {
@@ -1135,7 +1174,7 @@ body {
 }
 
 .col-valor h1 {
-  color: #ffffff;
+  color: #310165;
   font-size: 36px;
   font-weight: 900;
   line-height: 3rem;
@@ -1144,7 +1183,7 @@ body {
 }
 .col-valor p {
   font-size: 20px;
-  color: #fff;
+  color: #310165;
   font-weight: 500;
   margin-top: 10px;
   margin-bottom: 15px;
@@ -1153,6 +1192,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+
+  .valores{
+    padding: 100px 0;
+  }
 
 
   .valores .img-valor {
@@ -1209,14 +1252,14 @@ body {
 
 /* Section-6 ser roge */
 
-.ser-roge {
-  padding: 100px 0;
-  background: #fff;
+.ser-cliente {
+  background: rgb(59,12,108);
+  background: linear-gradient(90deg, rgba(59,12,108,1) 0%, rgba(47,2,97,1) 100%);
   height: auto;
   text-align: center;
 }
 
-.ser-roge .btn-red {
+.ser-cliente .btn-green {
   text-decoration: none;
 }
 
@@ -1374,7 +1417,7 @@ body {
   height: auto;
 }
 
-.ajudar .btn-red {
+.ajudar .btn-green {
   text-decoration: none;
 }
 
@@ -1387,7 +1430,7 @@ body {
 
 .beneficios-site {
   background-color: #414141;
-  background-image: url("../img/vem-ser-roge/banner-beneficios.jpg");
+  background-image: url("../img/vem-ser-cliente/banner-beneficios.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center right;
@@ -1433,6 +1476,9 @@ body {
   .onde-estamos {
     text-align: center;
   }
+  .onde {
+    padding: initial;
+}
 
 }
 
@@ -1486,7 +1532,7 @@ body {
 
 .trabalhe {
   background-color: #acacac;
-  background-image: url("../img/trabalhe-roge.jpg");
+  background-image: url("../img/bg-nao-fique-de-fora.jpg");
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
@@ -1500,7 +1546,7 @@ body {
 }
 
 .trabalhe .text-blue {
-  color: #00377b;
+  color: #310165;
 }
 
 .trabalhe .text-blue h2 {
@@ -1511,7 +1557,7 @@ body {
 }
 
 .trabalhe .text-blue h3 {
-  color: #0099ff;
+  color: #310165;
   font-size: 24px;
   font-weight: 900;
   line-height: 2rem;
@@ -1519,17 +1565,13 @@ body {
 }
 
 .trabalhe .text-blue p {
-  color: var(--light-black);
+  color: #310165;
   font-size: 20px;
   font-weight: 500;
   margin-top: 10px;
   text-decoration: none;
 }
 
-.trabalhe .text-blue a {
-  color: var(--light-black);
-  border-color: var(--light-black);
-}
 
 @media only screen and (max-width: 768px) {
   .fundacao {

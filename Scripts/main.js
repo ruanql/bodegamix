@@ -24,7 +24,7 @@ $(window).scroll(function () {
   slidesToScroll: 5,
   prevArrow: '<i class="left-arrow"></i>',
   nextArrow: '<i class="right-arrow"></i>',
-  dots: true,
+  dots: false,
   autoplay: true,
   autoplaySpeed: 2000,
   responsive: 
