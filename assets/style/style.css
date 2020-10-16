@@ -686,8 +686,8 @@ body {
   border-radius: 8px;
   transition: all ease 0.4s;
   margin: 1em;
-  max-width: 100px;
-  max-height: 60px;
+  max-width: 150px;
+  max-height: 100px;
 }
 
 .marcas .logomarcas img:hover {
@@ -1050,7 +1050,12 @@ body {
 
 .text-white {
   color: #fff;
-  padding: 10vmin 0;
+  padding: 2vmin 0;
+}
+
+.inovacao .text-white {
+  color: #fff;
+  padding: 0;
 }
 
 .text-white h2 {
@@ -1504,7 +1509,7 @@ body {
 
 .text-white {
   color: #fff;
-  padding: 10vmin 0;
+  padding: 5vmin 0;
 }
 
 .text-white h2 {
