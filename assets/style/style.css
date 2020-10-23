@@ -494,12 +494,13 @@ body {
 }
 
 .b-19 {
- top: 70px;
+ top: 0px;
  overflow-y: hidden;
 }
 
 .b-19 img {
   width: 100%;
+  overflow: hidden;
 }
 
 /* Section-1 sobre */
@@ -507,6 +508,8 @@ body {
 .sobre {
   padding-top: 100px;
   background: url('../img/bg-tecnologia.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: auto;
   overflow-y: hidden;
   
@@ -1027,7 +1030,7 @@ body {
 
 /* Section-2 inovação */
 
-.inovacao {
+.beneficios {
   background-image: url("../img/bg-mix.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -1039,21 +1042,12 @@ body {
   padding:  10vmin 0vmin;
 }
 
-
-.inovacao .row .col-mix {
-  padding-left: 15em;
-}
-
-.inovacao .row .col-mix-2 {
-  padding-right: 15em;
-}
-
 .text-white {
   color: #fff;
   padding: 2vmin 0;
 }
 
-.inovacao .text-white {
+.beneficios .text-white {
   color: #fff;
   padding: 0;
 }
@@ -1080,19 +1074,19 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .inovacao {
+  .beneficios {
     text-align: center;
   }
 
-  .inovacao .row {
+  .beneficios .row {
     padding: inherit;
   }
 
-  .inovacao .row .col-mix {
+  .beneficios .row .col-mix {
     padding: initial;
   }
   
-  .inovacao .row .col-mix-2 {
+  .beneficios .row .col-mix-2 {
     padding: initial;
   }
   
@@ -1330,60 +1324,29 @@ body {
 
 }
 
-/* Section-2 reconhece depoimentos */
+/* Section-2 servicos depoimentos */
 
-.reconhece {
-  padding: 100px 0;
-  background-image: url("../img/mudar-o-mundo/bg-depoimentos.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: auto;
+
+
+.beneficios .servicos img {
+  transition: all ease 0.4s;
+  margin: 1em;
+  max-width: 250px;
 }
 
-.reconhece .img-rounded  {
-  position: relative;
-  top: 0px;
-  right: 0px;
-  margin-top: 1em;
-  margin-right: 2em;
-  z-index: 1;
+.beneficios .servicos i.right-arrow {
+  right: -131px;
+  background-image: url('../img/arrow-right.png');
 }
 
-.reconhece .img-rounded img {
-  border-radius: 10em;
+.beneficios .servicos i.left-arrow {
+  left: -131px;
+  background-image: url("../img/arrow-left.png");
 }
 
-.reconhece .card-body {
-  padding: 1.25em 1.25em 1.25em 3.25em;
-}
 
-.reconhece .card-title {
-  margin-bottom: 0rem;
-}
 
-.reconhece .card {
-  background: #eeeeee00;
-  border-radius: 1rem;
-}
-
-.reconhece .card h1 {
-  color: #000;
-  text-transform: none;
-}
-
-.reconhece .card .text-muted {
-  color: #333!important;
-  font-size: 1.2em;
-}
-
-.reconhece .card p {
-  color: #2e3545;
-  padding-right: initial;
-  font-size: 16px;
-}
-
-.reconhece .slick-dots li.slick-active button:before {
+.servicos .slick-dots li.slick-active button:before {
   color: #cecece;
   background-color: #cecece;
 }
@@ -1429,63 +1392,8 @@ body {
 
 /* --------------------- */
 
-/* ---------- Vem ser Roge ----------- */
-
-/* Section-2 benefícios site */
-
-.beneficios-site {
-  background-color: #414141;
-  background-image: url("../img/vem-ser-cliente/banner-beneficios.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center right;
-  background-blend-mode: overlay;
-  height: auto;
-  position: relative;
-}
-
-.beneficios-site img {
-  transition: 0.6s ease all;
-}
-
-.beneficios-site img:hover {
-  transform: scale(1.05);
-}
 
 
-@media only screen and (max-width: 768px) {
-  
-  .beneficios-site img {
-    width: 100%;
-  }
-
-}
-
-/* Section-3 onde estamos */
-
-.onde-estamos {
-  overflow: hidden;
-}
-
-.onde-estamos .mapa img {
-  width: 100%;
-  transition: 0.4s ease;
-}
-
-.onde-estamos .mapa img:hover {
-  transform: scale(1.02);
-}
-
-@media only screen and (max-width: 768px) {
-  
-  .onde-estamos {
-    text-align: center;
-  }
-  .onde {
-    padding: initial;
-}
-
-}
 
 /* --------------------- */
 

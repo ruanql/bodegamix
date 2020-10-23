@@ -4,17 +4,7 @@
  *
  */
 
-let navbar = $(".navbar");
 
-$(window).scroll(function () {
-  // get the complete hight of window
-  let oTop = $(".buy").offset().top - window.innerHeight;
-  if ($(window).scrollTop() > oTop) {
-    navbar.addClass("sticky");
-  } else {
-    navbar.removeClass("sticky");
-  }
-});
 
  // Carousel marcas
 
@@ -53,68 +43,38 @@ $(window).scroll(function () {
   });
 });
 
-// Carousel depoimentos
+// Carousel beneficios
 
 $(document).ready(function(){
-  $('.depoimentos').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  prevArrow: '<i class="left-arrow"></i>',
-  nextArrow: '<i class="right-arrow"></i>',
-  dots: true,
-  autoplay: true,
-  autoplaySpeed: 4000,
-  responsive: 
-  [
-  {
-     breakpoint: 600,
-     settings: {
-         infinite: true,
-         arrows: true,
-         slidesToShow: 1
-     }
-  },
-  {
-     breakpoint: 480,
-     settings: {
-         infinite: true,
-         arrows: true,
-         slidesToShow: 1
-     }
-  }
-  ]
+  $('.servicos').slick({
+    centerMode: true,
+    centerPadding: '10px',
+    slidesToShow: 3,
+    arrows: true,
+    prevArrow: '<i class="left-arrow"></i>',
+    nextArrow: '<i class="right-arrow"></i>',
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
   });
-});
-
-// Carousel depoimentos reconhece
-
-$(document).ready(function(){
-  $('.depo-reconhece').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  prevArrow: '<i class="left-arrow"></i>',
-  nextArrow: '<i class="right-arrow"></i>',
-  dots: true,
-  autoplay: true,
-  autoplaySpeed: 4000,
-  responsive: 
-  [
-  {
-     breakpoint: 600,
-     settings: {
-         infinite: true,
-         arrows: true,
-         slidesToShow: 1
-     }
-  },
-  {
-     breakpoint: 480,
-     settings: {
-         infinite: true,
-         arrows: true,
-         slidesToShow: 1
-     }
-  }
-  ]
   });
-});
