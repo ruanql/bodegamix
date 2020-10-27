@@ -178,29 +178,6 @@ body {
   overflow-y: hidden;
 }
 
-.bg-chega-mais {
-  background: url("../img/chega-mais/bg-chega-mais.jpg") no-repeat center;
-  background-size: cover;
-  height: 100vh;
-}
-
-.bg-marcas{
-  background: url("../img/futuro-roge.jpg") no-repeat center;
-  background-size: cover;
-  height: 100vh;
-}
-
-.bg-mudar-sempre{
-  background: url("../img/mudar-o-mundo/bg-mudar-sempre.jpg") no-repeat center;
-  background-size: cover;
-  height: 100vh;
-}
-
-.bg-ser-parceiro{
-  background: url("../img/vem-ser-cliente/bg-parceiro.jpg") no-repeat center;
-  background-size: cover;
-  height: 100vh;
-}
 
 .menu {
   background-color: #fff;
@@ -263,41 +240,6 @@ body {
     padding-top: 20vmin;
   }
 
-  .bg-chega-mais {
-    background: url("../img/chega-mais/bg-chega-mais.jpg") no-repeat center left;
-    background-size: cover;
-    background-color: #b1b1b1;
-    background-blend-mode: darken;
-    height: 100vh;
-    padding-top: 20vmin;
-  }
-
-  .bg-marcas{
-    background: url("../img/futuro-roge.jpg") no-repeat center;
-    background-size: cover;
-    background-color: #b1b1b1;
-    background-blend-mode: darken;
-    height: 100vh;
-    padding-top: 20vmin;
-  }
-
-  .bg-mudar-sempre{
-    background: url("../img/mudar-o-mundo/bg-mudar-sempre.jpg") no-repeat center left;
-    background-size: cover;
-    background-color: #b1b1b1;
-    background-blend-mode: darken;
-    height: 100vh;
-    padding-top: 20vmin;
-  }
-
-  .bg-ser-parceiro{
-    background: url("../img/vem-ser-cliente/bg-parceiro.jpg") no-repeat center;
-    background-size: cover;
-    background-color: #b1b1b1;
-    background-blend-mode: darken;
-    height: 100vh;
-    padding-top: 20vmin;
-  }
 
   .main-header video {
     display: none;
@@ -1249,7 +1191,7 @@ body {
 }
 
 
-/* Section-6 ser roge */
+
 
 .ser-cliente {
   background: rgb(59,12,108);
@@ -1289,9 +1231,6 @@ body {
   background: var(--bggradient);
 }
 
-/* --------------------- */
-
-/* ---------- Mudar o mundo ----------- */
 
 /* Section-1 conhecimento */
 
@@ -1301,28 +1240,7 @@ body {
   text-align: center;
 }
 
-/* Section-2 Como fazemos */
 
-.como-fazemos {
-  padding: 100px 0;
-  background-image: url("../img/mudar-o-mundo/bg-como-fazemos.jpg");
-  background-size: cover;
-  background-position: center;
-  height: auto;
-  text-align: center;
-}
-
-.como-fazemos .text-content {
-  padding: 0 10em 0 10em;
-}
-
-
-@media only screen and (max-width: 768px) {
-  .como-fazemos .text-content {
-    padding: initial;
-  }
-
-}
 
 /* Section-2 servicos depoimentos */
 
@@ -1377,18 +1295,6 @@ body {
   padding: 150px 0 100px 0;
 }
 
-/* Section-4 ajudar */
-
-.ajudar {
-  background: var(--gradientblue);
-  width: 100%;
-  height: auto;
-}
-
-.ajudar .btn-green {
-  text-decoration: none;
-}
-
 
 /* --------------------- */
 
@@ -1397,49 +1303,6 @@ body {
 
 /* --------------------- */
 
-/* Section fundacao */
-
-.fundacao {
-  background-color: #414141;
-  background-image: url("../img/fundacao.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-blend-mode: overlay;
-  width: 100%;
-  height: 650px;
-  position: relative;
-}
-
-.fundacao .row .text-white {
-  padding: 15vmin 0vmin 5vmin 0vmin;
-}
-
-.text-white {
-  color: #fff;
-  padding: 5vmin 0;
-}
-
-.text-white h2 {
-  font-size: 42px;
-  font-weight: 900;
-  line-height: 3rem;
-  text-transform: uppercase;
-}
-
-.text-white h3 {
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 3rem;
-  text-transform: uppercase;
-}
-
-.text-white p {
-  font-size: 20px;
-  font-weight: 500;
-  margin-top: 10px;
-  text-decoration: none;
-}
 
 /* Section trabalhe */
 
